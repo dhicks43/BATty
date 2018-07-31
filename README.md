@@ -7,4 +7,4 @@ A Python powered serverless web app for understanding the current market value o
 * [Python 3](https://python.org)
 
 ### Live Demo
-![.gif of a usage of BATty](https://github.com/dhicks43/batty/resources/batty0224.gif)
+![.gif of a usage of BATty](https://github.com/dhicks43/batty/blob/master/resources/bat0224.gif)
