@@ -1,4 +1,4 @@
-##Version 0.2.30
+## Version 0.2.817
 
 import backend_sqlite as be
 import dash
@@ -47,22 +47,24 @@ app.layout = html.Div([
                             value="Brand"
                             ),
 
-                        html.Br(),
+                         html.Br(),
 
-                        dcc.Dropdown(id='brand-models', options=[], value="Model"),
+                         dcc.Dropdown(id='brand-models', options=[], value="Model"),
 
-                        html.Hr(),
+                         html.Hr(),
 
-                        html.Div(id="final_graph_div",
-                                children=[
-                                html.Div(id="final_graph"),
-                                html.Br(),
-                                html.Div(id="final_graph-info", className="row justify-content-between")
-                                ]
-                        ),
-                        html.Br()
+                         html.Div(id="final_graph_div",
+                                  children=[
+                                      html.Div(id="final_graph"),
+                                      html.Br(),
+                                      html.Div(id="final_graph-info", className="row justify-content-between")
+                                   ]
+                                  ),
 
-                    ])
+                         html.Br()
+
+                     ])
+
         ]
     )
 
@@ -139,7 +141,7 @@ def populate_chart(brand, model):
         final_graph = dcc.Graph(
             figure=go.Figure(
                 layout=
-                    go.Layout(
+                go.Layout(
                         title=str(brand).replace("_", "-") + " " + str(model),
                         xaxis=dict(title="Time frame"),
                         yaxis=dict(title="Price"),

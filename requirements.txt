@@ -15,6 +15,7 @@ dash-renderer==0.13.0
 decorator==4.3.0
 Flask==1.0.2
 Flask-Compress==1.4.0
+gunicorn==19.9.0
 hyperlink==18.0.0
 idna==2.7
 incremental==17.5.0
